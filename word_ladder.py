@@ -60,9 +60,9 @@ def word_ladder(start_word, end_word, dictionary_file='words5.dict'):
                     a.append(x)
                     return a
                 if x not in previous:
-                    newStack = copy.copy(a)
-                    newStack.append(x)
-                    queue.append(newStack)
+                    new_stack = copy.copy(a)
+                    new_stack.append(x)
+                    queue.append(new_stack)
                     previous.append(x)
 
     return None
